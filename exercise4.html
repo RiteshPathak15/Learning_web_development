@@ -1,0 +1,58 @@
+<!-- Create a multicolor website which can change color using CSS Variables -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --color: aqua;
+
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        .main-contain {
+            background-color: var(--color);
+            padding: 18px;
+            margin: 0px;
+        }
+
+        .nav {
+            padding: 12px 0px;
+            margin: 0%;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 20px;
+            margin: 20px;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-contain">
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>help</li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>

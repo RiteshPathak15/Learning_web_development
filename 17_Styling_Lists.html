@@ -1,0 +1,49 @@
+<!-- summery :
+styling of list 
+
+we can style the marker of list items :-
+display: list-item (default property)
+
+we can change the marker of list by :-
+- display: none;                       (no marker)
+- display: circle ;         (marker shape circle)
+- display: devanagari ;      (devanagri numbers)
+etc.
+
+we can use images as marker using :-
+- list-style-image: url("enter url of image here");
+
+we can use emoji as marker using :-
+- list-style-type: "enter shape of emoji here";
+
+by default list markers (numbers or dot before list items) are outside the list, if we wants to markers inside the list use 
+- list-style-position: inside; -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lists</title>
+    <style>
+        nav ul li{
+            list-style: devanagari;
+            list-style-type: "🔥";
+            /* background-color: yellow; */
+            /* list-style-position: inside;  to put list inside the box means combine the list item and list style */
+            border: 2px solid black;
+            /* list-style: disc inside url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+            /* list-style-image: url("https://user-images.githubusercontent.com/14011726/94132137-7d4fc100-fe7c-11ea-8512-69f90cb65e48.gif"); */
+        }
+ 
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

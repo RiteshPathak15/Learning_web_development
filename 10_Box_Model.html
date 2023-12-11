@@ -1,0 +1,58 @@
+<!-- Summary of Lecture 18 yt
+    
+1. Margin: border ke bahar ki space
+
+2. padding: border aur content ke beech ki space
+
+3. By default height and weight specified to an element is consist of only content. 
+    (yaani height jo denge wo sirf content ki height hogi)
+
+4. box-sizing:border-box : when we use (box-sizing:border-box) and we give height or weight to an element 
+                          then it consist of padding border and content (ab jo height denge wo content, 
+                          border aur padding teeno ko mila ke hoga)
+
+5. Margin collapse: when Margin of 2 element overlap then only one margin will be apply 
+                    which is largest of the two margins .
+
+6. ways to write (i) margin: nUnit; (ii) padding: nUnit; (iii) border: nUnite style color; -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            background-color: aqua;
+        }
+        .box1{
+            color: yellow;
+            padding: 10px;
+            margin:35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color:red;
+            padding: 10px;
+            margin:25px;
+            border: 2px solid black;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+</body>
+
+</html>

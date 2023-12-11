@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <link rel="stylesheet" href="style.css"><!--This Type of style is called External Style -->
+    <style>/*This Type of style is called Embedded Style */
+        table{
+            border: 2px solid black; /*width ; linestytle ; linecolor*/
+        }
+        td{
+            border: 2px solid black; /*width ; linestytle ; linecolor*/
+        }
+        th{
+            border: 2px solid black; /*width ; linestytle ; linecolor*/
+        }
+    </style><!--This Type of style is called Embedded Style -->
+</head>
+
+<body>
+    <img height="200" src="https://www.vskills.in/lms/wp-content/uploads/2016/06/Colspan-and-Rowspan-Attributes-3.png" alt="Train image">
+    <br><br><br>
+    <table>
+        <caption>Employee Details</caption>
+        <thead>
+            <tr><!--Table row-->
+                <th>Name</th> <!--Table heading it also make text bold-->
+                <th>Designation</th><!--Table heading it also make text bold-->
+                <th>Fav Language</th><!--Table heading it also make text bold-->
+            </tr>
+        </thead>
+        <tbody>
+
+
+            <tr>
+                <td>Harry</td>
+                <td>Programmer</td>
+                <td>JavaScript</td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">Java</td>
+            </tr>
+            <tr>
+                <td colspan="2">Sam</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Sam</td>
+                <td rowspan="2">foot</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br><br>
+
+
+    <ul type="square"><!--Unoeder list is Type is used for making list  in diff shape eg:square-->
+        <!--Type Attribute is used for making different shape according to our use-->
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ul>
+    <br>
+    <ol type="A"><!--Order list is used for making list  in alphanumeric-->
+        <!--Type Attribute is used for making different shape according to our use-->
+        
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubham</li>
+    </ol>
+
+</body>
+
+</html>
