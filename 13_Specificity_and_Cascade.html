@@ -8,15 +8,13 @@
 
 4. Origin: authored CSS has priority
 
-5. Important: When !important It has highest priority. 
+5. Important:!important It has highest priority. !important has more Order of Specificity than any other (means it can over write inline style also)
 
 6. Specificity: Selector with high specificity is applied to html element.
 
 7. Order of Specificity: Inline Style > ID selector > Class or Attribute  selector > Element Selector > Universal Selector
 
-8. !important has more Order of Specificity than any other (means it can over write inline style also)
-
-9. Calculating Specificity: Value of Each Selector: Universal is 0, 1 for each element selector or pseudo-element, 10 for each class value (or pseudo-class or attribute selector), 100 for each ID value. Inline Style has 1000 specificity. Just add value to find specificity. -->
+8. Calculating Specificity: Value of Each Selector: Universal is 0, 1 for each element selector or pseudo-element, 10 for each class value (or pseudo-class or attribute selector), 100 for each ID value. Inline Style has 1000 specificity. Just add value to find specificity. -->
 
 <!DOCTYPE html>
 <html lang="en">

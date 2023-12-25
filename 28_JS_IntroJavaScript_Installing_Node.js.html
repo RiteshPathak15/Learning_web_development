@@ -1,0 +1,42 @@
+<!--               Summary
+
+1.alert("Hello world");//alert is used for popup the message in website
+2.console.log("loading...")//The purpose of this statement is to print a message to the browser's console and help for debug
+3.var a=prompt("Enter your name")//var is used for variable and prompt function is used to display a dialog box that prompts the user for input
+4.var isTrue = confirm("Are you sure you want to leave this page and blast your computer ")//confirm function in JavaScript is used to display a dialog box with a specified message and OK and Cancel buttons.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet odio cum minima est libero assumenda.
+    </div>
+    <button>Submit</button>
+    <script>
+        alert("Hello world");//alert is used for popup the message in website
+        console.log("loading...")//The purpose of this statement is to print a message to the browser's console and help for debug
+        var a = prompt("Enter your name")//var is used for variable and prompt function is used to display a dialog box that prompts the user for input.
+        console.log("Your name is: " + a)
+        var isTrue = confirm("Are you sure you want to leave this page and blast your computer ")//confirm function in JavaScript is used to display a dialog box with a specified message and OK and Cancel buttons.
+
+        if (isTrue) {
+            console.log("Computer is blasting")
+        }
+        else {
+            console.log("Computer is not blasting")
+        }
+        console.log("Your number is " + a)
+        document.title = "Hey I am good"
+        // document.body.style.backgroundColor = "red"
+    </script>
+</body>
+
+</html>
