@@ -1,0 +1,48 @@
+<!--      Summary
+1. Console.log: is used to log(print) a msg to console
+2. Variable: Variable is container that store the data
+3. var: Variable can be re-declared and updated . A global Scope var
+4. let: let cannot be re-declared but can be updated.A block scope variable
+5. const: const cannot be re-declared or updated.A block scope variable-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Go and check console in developer section on web page</h1>
+    <script>
+
+        // Console.log is used to log(print) a msg to console
+        console.log("Hello Ritesh");
+        console.log("Welcome back");
+
+        
+        // Variable is container that store the data 
+        // The value of js variable can be changed during the execution in program
+        nname = "Ritesh Pathak";
+        console.log(nname);
+
+        // Variable (Let, const and var)
+        // let and const are mostly used for declaring variable because they are block var
+        // for eg:
+        // While using var keyword we can use same variable multiple time.
+        var age = 15;
+        var age = 24;
+        var age = 50;
+        console.log(age);
+
+
+        let fullName = "Ritesh Hari Pathak";
+        // let fullName="Ritesh"; you cannot put same var name while using let as it is block scope variable
+       fullName="Ritesh";//let keywordf allow to change the value 
+        console.log(fullName);
+    </script>
+</body>
+
+</html>
